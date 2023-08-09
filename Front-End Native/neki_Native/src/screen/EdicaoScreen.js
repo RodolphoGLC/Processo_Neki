@@ -34,7 +34,7 @@ export const EdicaoScreen = ({ navigation }) => {
         })
             .then(() => {
                 console.log("Sucesso")
-                navigation.navigate('HomeA');
+                navigation.navigate('EscolhaTela');
             })
             .catch((e) => {
                 console.log(e)
