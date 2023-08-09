@@ -74,10 +74,12 @@ export const CadastroSkill = ({ navigation }) => {
                             setErro('');
                             setCadastroHabilitado(true);
                         } else {
+                            setLevel(text);
                             setCadastroHabilitado(false);
                             setErro('Digite um valor entre 0 e 10');
                         }
                     } else {
+                        setLevel(text);
                         setCadastroHabilitado(false);
                         setErro('Só pode números');
                     }
@@ -182,7 +184,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     erro: {
-        color: 'darkRed',
+        color: '#e31c1c',
         marginTop: 10,
     },
 });

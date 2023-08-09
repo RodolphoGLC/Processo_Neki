@@ -11,6 +11,7 @@ export const EdicaoScreen = ({ navigation }) => {
     const [erro, setErro] = useState('');
 
     const { dadosUsuario, Editar } = useContext(DataContext);
+    const [cadastroHabilitado, setCadastroHabilitado] = useState(false);
 
     const idSkill = parseInt(Editar.id);
 
@@ -72,15 +73,20 @@ export const EdicaoScreen = ({ navigation }) => {
                         if (numericValue >= 0 && numericValue <= 10) {
                             setLevel(numericValue.toString());
                             setErro('');
+                            setCadastroHabilitado(true);
                         } else {
+                            setLevel(text);
+                            setCadastroHabilitado(false);
                             setErro('Digite um valor entre 0 e 10');
                         }
                     } else {
-                        setErro('Só pode número');
+                        setLevel(text);
+                        setCadastroHabilitado(false);
+                        setErro('Só pode números');
                     }
                 }}
                 value={level}
-                placeholder={Editar.level.toString()}
+                placeholder="Level - 0-10"
                 keyboardType="numeric"
             />
             {erro && <Text style={styles.erro}>{erro}</Text>}
@@ -93,7 +99,7 @@ export const EdicaoScreen = ({ navigation }) => {
                 placeholder={Editar.descricao}
             />
 
-            <TouchableOpacity style={styles.button} onPress={() => { handleSubmitData() }}>
+            <TouchableOpacity style={styles.button} disabled={!cadastroHabilitado} onPress={() => { handleSubmitData() }}>
                 <Text style={styles.txtButton}>Editar</Text>
             </TouchableOpacity>
 
