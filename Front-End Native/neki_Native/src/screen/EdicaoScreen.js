@@ -86,7 +86,7 @@ export const EdicaoScreen = ({ navigation }) => {
                     }
                 }}
                 value={level}
-                placeholder="Level - 0-10"
+                placeholder={Editar.level.toString()}
                 keyboardType="numeric"
             />
             {erro && <Text style={styles.erro}>{erro}</Text>}
