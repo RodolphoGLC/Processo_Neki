@@ -24,15 +24,12 @@ ALTER TABLE public.user_roles ADD CONSTRAINT fk6hdcxig28sjux082ekd4324nj FOREIGN
 
 CREATE TABLE public.skills (
 	id serial4 NOT NULL,
-	descricao varchar(255) NOT NULL,
-	"level" int4 NOT NULL,
-	nome varchar(255) NOT NULL,
-	url_img varchar(255) NOT NULL,
+	descricao varchar(255) NULL,
+	"level" int4 NULL,
+	nome varchar(255) NULL,
+	url_img varchar(255) NULL,
 	usuario int4 NOT NULL,
 	CONSTRAINT skills_pkey PRIMARY KEY (id)
 );
-
-
--- public.skills foreign keys
 
 ALTER TABLE public.skills ADD CONSTRAINT fkasmv5q8xylyqodq6492efjunl FOREIGN KEY (usuario) REFERENCES public.usuario(id);
