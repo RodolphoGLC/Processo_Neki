@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 48px 48px 0px 48px;
+  background-color: var(--background-color-form);
+  width: 400px;
+  height: 600px;
+  margin: 30px 0 0 0;
+  padding: 20px 0;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.btnsenha {
+  background-color: var(--botton-color);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  margin-top: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 48px 48px 48px 48px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  &:hover {
+    box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.18);
+    background-color: var(--botton-hover-color);
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.btnsenha:active {
+  background-color: var(--botton-hover-active);
+  box-shadow: 0 5px #666;
+  transform: translateY(px);
+}

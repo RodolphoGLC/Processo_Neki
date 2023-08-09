@@ -1,0 +1,567 @@
+@import url("../../Global.css");
+
+.container-skills {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vw;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.setaVoltar {
+  position: absolute;
+  top: 30px;
+  left: 640px;
+  background-color: var(--background-color);
+  border: none
+}
+
+.setaImg {
+  width: 30px;
+  height: 30px;
+  background-color: var(--background-color);
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  background-color: var(--background-color-primaria);
+  color: var(--font-color-variant);
+  margin-bottom: 30px;
+  padding: 4px 30px;
+  border-radius: 13px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.imgSkill {
+  height: 150px;
+  width: 150px;
+}
+
+.textoMessage {
+  text-align: center;
+}
+
+.skillIndividual {
+  display: flex;
+  background-color: var(--font-color-variant);
+  height: auto;
+  width: 900px;
+  margin-bottom: 15px;
+  padding: 20px 30px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.imgdiv {
+  width: 20vw;
+  margin-right: 15px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.nomeleveldescricao {
+  flex-grow: 1;
+  width: 70vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.nl {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 30px;
+  margin: 10px 0 5px 0;
+}
+
+.nl p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.d {
+  height: 120px;
+  margin: 5px 0 0 0;
+}
+
+.d p {
+  font-weight: 400;
+  font-size: 20px;
+  white-space: inherit;
+  text-align: justify;
+  margin: 0 15px 0 0;
+}
+
+.btns {
+  display: flex;
+  height: 100%;
+  width: 10vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.btnVgRmvItem {
+  background-color: var(--botton-color);
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 48px 48px 48px 48px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  &:hover {
+    box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.18);
+    background-color: var(--botton-hover-color);
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-skills{
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  .skillIndividual {
+    display: flex;
+    background-color: var(--font-color-variant);
+    height: auto;
+    width: 700px;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .imgdiv {
+    width: 20vw;
+    margin-right: 15px;
+  }
+
+  .nomeleveldescricao {
+    flex-grow: 1;
+    width: 70vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .nl {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 30px;
+    margin: 10px 0 5px 0;
+  }
+
+  .nl p {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .d {
+    height: 120px;
+    margin: 5px 0 0 0;
+  }
+
+  .d p {
+    font-weight: 400;
+    font-size: 20px;
+    white-space: inherit;
+  }
+
+  .btns {
+    display: flex;
+    height: 100%;
+    width: 10vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .btnVgRmvItem {
+    background-color: var(--botton-color);
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 48px 48px 48px 48px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+      box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.18);
+      background-color: var(--botton-hover-color);
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1440px) {
+  .skillIndividual {
+    display: flex;
+    background-color: var(--font-color-variant);
+    height: auto;
+    width: 900px;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .setaVoltar {
+    position: absolute;
+    top: 25px;
+    left: 300px;
+    background-color: var(--background-color);
+    border: none
+  }
+  
+  .setaImg {
+    width: 30px;
+    height: 30px;
+    background-color: var(--background-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .skillIndividual {
+    display: flex;
+    background-color: var(--font-color-variant);
+    height: auto;
+    width: 700px;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  .setaVoltar {
+    position: absolute;
+    top: 30px;
+    left: 180px;
+    background-color: var(--background-color);
+    border: none
+  }
+  
+  .setaImg {
+    width: 30px;
+    height: 30px;
+    background-color: var(--background-color);
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .skillIndividual {
+    display: flex;
+    background-color: var(--font-color-variant);
+    height: auto;
+    width: 550px;
+    margin: 0 0 15px 0;
+    padding: 20px 30px;
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .setaVoltar {
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    background-color: var(--background-color);
+    border: none
+  }
+  
+  .setaImg {
+    width: 30px;
+    height: 30px;
+    background-color: var(--background-color);
+  }
+
+  .imgSkill {
+    height: 100px;
+    width: 100px;
+  }
+
+  .btnVgRmvItem {
+    background-color: var(--botton-color);
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 48px 48px 48px 48px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+      box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.18);
+      background-color: var(--botton-hover-color);
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 600px) {
+  .skillIndividual {
+    height: auto;
+    width: 400px;
+    flex-direction: column;
+  }
+
+  .setaVoltar {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    background-color: var(--background-color);
+    border: none
+  }
+  
+  .setaImg {
+    width: 25px;
+    height: 25px;
+    background-color: var(--background-color);
+  }
+
+  .imgdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .imgSkill {
+    max-height: 150px;
+    max-width: 150px;
+  }
+
+  .nomeleveldescricao {
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .nl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 10px 0 5px 0;
+  }
+
+  .nl p {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .d {
+    height: 120px;
+    margin: 5px 0 0 0;
+  }
+
+  .d p {
+    font-weight: 400;
+    font-size: 20px;
+    white-space: inherit;
+    text-align: justify;
+    margin: 0 15px 0 0;
+  }
+
+  .btns {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .btnVgRmvItem {
+    background-color: var(--botton-color);
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 48px 48px 48px 48px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+      box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.18);
+      background-color: var(--botton-hover-color);
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .skillIndividual {
+    height: auto;
+    width: 280px;
+    flex-direction: column;
+  }
+
+  .setaVoltar {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    background-color: var(--background-color);
+    border: none
+  }
+  
+  .setaImg {
+    width: 20px;
+    height: 20px;
+    background-color: var(--background-color);
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    background-color: var(--font-color-white-black);
+    color: var(--font-color);
+    margin-bottom: 30px;
+    padding: 4px 20px;
+    border-radius: 13px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15);
+  }
+
+  .imgdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .imgSkill {
+    max-height: 100px;
+    max-width: 100px;
+  }
+
+  .nomeleveldescricao {
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .nl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 10px 0 5px 0;
+  }
+
+  .nl p {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .d {
+    height: 120px;
+    margin: 5px 0 0 0;
+  }
+
+  .d p {
+    font-weight: 400;
+    font-size: 20px;
+    white-space: inherit;
+    text-align: justify;
+    margin: 0 15px 0 0;
+  }
+
+  .btns {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .btnVgRmvItem {
+    background-color: var(--botton-color);
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 48px 48px 48px 48px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    &:hover {
+      box-shadow: 6px 6px 12px 6px rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.18);
+      background-color: var(--botton-hover-color);
+      color: #000;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --branco-primario: #fff;
+  --branco-secundario: #f2faf9;
+  --azul-primario: #1c4c5c;
+  --azul-secundario: #0ca29f;
+  --preto-primario: #231f21;
+  --verde-primario: #47b494;
+  --verde-secundario: #148d80;
+
+  --background-color-primaria: var(--azul-primario);
+  --background-color: var(--azul-secundario);
+  --background-color-form: var(--azul-secundario);
+  --font-color: var(--preto-primario);
+  --font-color-variant: var(--branco-primario);
+  --botton-color: var(--azul-primario);
+  --botton-hover-color: var(--verde-primario);
+  --botton-hover-active: var(--verde-secundario);
+  --font-color-white-black: var(--branco-secundario);
+}

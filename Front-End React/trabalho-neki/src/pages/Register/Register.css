@@ -1,0 +1,18 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 48px 48px 0px 48px;
+    background-color: var(--background-color-form);
+    width: 400px;
+    height: 520px;
+    margin-top: 80px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.15);
+  }
+  
+  .formulario h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+  }
