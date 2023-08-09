@@ -1,9 +1,10 @@
 CREATE TABLE public.roles (
 	id serial4 NOT NULL,
 	"name" varchar(20) NOT NULL,
-	CONSTRAINT roles_name_check CHECK (((name)::text = ANY ((ARRAY['ROLE_USER'::character varying, 'ROLE_ADM'::character varying])::text[]))),
 	CONSTRAINT roles_pkey PRIMARY KEY (id)
 );
+
+INSERT INTO public.roles (name) VALUES ('ROLE_USER');
 
 CREATE TABLE public.usuario (
 	id serial4 NOT NULL,
@@ -19,6 +20,7 @@ CREATE TABLE public.user_roles (
 );
 
 ALTER TABLE public.user_roles ADD CONSTRAINT fk6hdcxig28sjux082ekdae5wnj FOREIGN KEY (user_id) REFERENCES public.usuario(id);
+ALTER TABLE public.user_roles ADD CONSTRAINT fk6hdcxig28sjux082ekd4324nj FOREIGN KEY (role_id) REFERENCES public.roles(id);
 
 CREATE TABLE public.skills (
 	id serial4 NOT NULL,
